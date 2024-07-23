@@ -12,3 +12,4 @@ abstract interface class AuthRepository {
     required String password,
   });
 }
+
