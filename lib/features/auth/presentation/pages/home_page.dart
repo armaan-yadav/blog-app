@@ -13,12 +13,10 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(),
       body: Center(
-        child: Center(
-          child: Text(
-            "Home Page",
-            style: TextStyle(
-              fontSize: 30,
-            ),
+        child: Text(
+          "Home Page",
+          style: TextStyle(
+            fontSize: 30,
           ),
         ),
       ),

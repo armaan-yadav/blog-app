@@ -5,9 +5,18 @@ import 'package:firebase_auth/firebase_auth.dart';
 class AuthFirebaseDataSource implements AuthRemoteDataSource {
   @override
   Future<String> logInWithEmailAndPassword(
-      {required String email, required String password}) {
-    // TODO: implement logInWithEmailAndPassword
-    throw UnimplementedError();
+      {required String email, required String password}) async {
+    try {
+      final response = await FirebaseAuth.instance.signInWithEmailAndPassword(
+        email: email,
+        password: password,
+      );
+      print(response);
+      return response.user!.uid;
+    } catch (e) {
+      print(e);
+      throw ServerException(e.toString());
+    }
   }
 
   @override
