@@ -1,7 +1,7 @@
 import 'package:blog_app/core/secrets/supabase_secrets.dart';
 import 'package:blog_app/core/theme/theme.dart';
-import 'package:blog_app/features/auth/data/data%20source/auth_firebase_data_source.dart';
-import 'package:blog_app/features/auth/data/data%20source/auth_supabase_data_source.dart';
+import 'package:blog_app/features/auth/data/data%20source/remote/firebase/auth_firebase_data_source.dart';
+import 'package:blog_app/features/auth/data/data%20source/remote/supabase/auth_supabase_data_source.dart';
 import 'package:blog_app/features/auth/data/repository/auth_repository_implementation.dart';
 import 'package:blog_app/features/auth/domain/usecases/user_sign_up.dart';
 import 'package:blog_app/features/auth/presentation/bloc/auth_bloc.dart';

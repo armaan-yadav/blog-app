@@ -2,19 +2,8 @@
 // so that if kalko we want to change the data source like firebase etc
 // toh we can easily migrate
 import 'package:blog_app/core/error/exceptions.dart';
+import 'package:blog_app/features/auth/data/data%20source/remote/auth_remote_data_source.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
-
-abstract interface class AuthRemoteDataSource {
-  Future<String> logInWithEmailAndPassword({
-    required String email,
-    required String password,
-  });
-  Future<String> signUpWithEmailAndPassword({
-    required String name,
-    required String email,
-    required String password,
-  });
-}
 
 //actual implementation of supabase (remote) data source
 //! Concrete Implementation

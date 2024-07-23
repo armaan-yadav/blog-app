@@ -1,5 +1,5 @@
 import 'package:blog_app/core/error/exceptions.dart';
-import 'package:blog_app/features/auth/data/data%20source/auth_supabase_data_source.dart';
+import 'package:blog_app/features/auth/data/data%20source/remote/auth_remote_data_source.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class AuthFirebaseDataSource implements AuthRemoteDataSource {
